@@ -10,9 +10,9 @@ The system demonstrates how modern cryptography works using secure algorithms li
 
 ## Team members
 
-- **Rahaf**
+- **Rahaf Obaid Alharbi 432218745**
 - **Badriah Alharbi 431201871**
-- **Nasseebah Rashed Aldubayyan**
+- **Nasseebah Rashed Aldubayyan 431201800**
 
 ---
 
@@ -62,12 +62,17 @@ Encryption-Project/
 ├── verifier.py # GUI application (main system)
 └── README.md # Project documentation
 
+---
+
 ## How to Run the Project
 
 ### 1. Install required library
 pip install pycryptodome
 
 ### 2. run verifier.py
+python EncryptionProject/verifier.py
+
+---
 
 ### How to Use
 1. Open the program
