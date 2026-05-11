@@ -11,7 +11,7 @@ The system demonstrates how modern cryptography works using secure algorithms li
 ## Team members
 
 - **Rahaf**
-- **B**
+- **Badriah Alharbi 431201871**
 - **Nasseebah Rashed Aldubayyan**
 
 ---
