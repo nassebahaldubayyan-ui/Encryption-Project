@@ -8,11 +8,11 @@ The system demonstrates how modern cryptography works using secure algorithms li
 
 ---
 
-## Team Roles
+## Team members
 
-- **Rahaf:** Implemented the encryption and decryption logic using AES-GCM and PBKDF2.
-- **You:** Developed the GUI system using Tkinter and connected all components.
-- **Nasseeba:** Created verification system and documentation (README + testing).
+- **Rahaf**
+- **B**
+- **Nasseebah Rashed Aldubayyan**
 
 ---
 
