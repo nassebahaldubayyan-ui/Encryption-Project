@@ -2,7 +2,6 @@ import tkinter as tk
 from tkinter import messagebox
 from crypto_utils import encrypt_text, decrypt_text
 
-
 # Encrypt + Decrypt Function
 def process_text():
 
@@ -26,6 +25,12 @@ def process_text():
         encrypted_output.delete("1.0", tk.END)
         encrypted_output.insert(tk.END, encrypted_data["ciphertext"].hex())
         encrypted_output.config(state="disabled")
+        
+        # Show generated key
+        key_output.config(state="normal")
+        key_output.delete("1.0", tk.END)
+        key_output.insert(tk.END, encrypted_data["key"].hex())
+        key_output.config(state="disabled")
 
         # Show decrypted text
         decrypted_output.config(state="normal")
@@ -38,7 +43,7 @@ def process_text():
 # Main Window
 root = tk.Tk()
 root.title("AES Encryption System")
-root.geometry("500x380") 
+root.geometry("500x400") 
 
 # Message section 
 message_label = tk.Label(root, text="Enter Message:")
@@ -51,7 +56,7 @@ message_input.pack(pady=5)
 password_label = tk.Label(root, text="Enter Password:")
 password_label.pack(pady=5)
 #to input password
-password_input = tk.Entry(root, width=50, show="*")
+password_input = tk.Entry(root, width=50, show="*") 
 password_input.pack(pady=5)
 
 # Encrypt Button
@@ -65,6 +70,13 @@ encrypted_label.pack()
 encrypted_output = tk.Text(root, height=2, width=50)
 encrypted_output.pack(pady=5)
 encrypted_output.config(state="disabled")
+
+# Generated Key section
+key_label = tk.Label(root, text="Generated AES-256 Key:")
+key_label.pack()
+key_output = tk.Text(root, height=2, width=50)
+key_output.pack(pady=5)
+key_output.config(state="disabled")
 
 # Decrypted Output section
 decrypted_label = tk.Label(root, text="Decrypted Text:")

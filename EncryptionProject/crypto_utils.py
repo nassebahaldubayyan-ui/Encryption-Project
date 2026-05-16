@@ -31,6 +31,7 @@ def encrypt_text(password, plaintext):
 
     return {
         "salt": salt,
+        "key": key,
         "nonce": cipher.nonce,
         "tag": tag,
         "ciphertext": ciphertext
